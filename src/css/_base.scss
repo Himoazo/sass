@@ -1,1 +1,8 @@
-/* Variables mixin etc */
+@mixin menuButton {
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    background-color: rgb(119, 24, 24);
+    border: white solid 2px;
+    cursor: pointer;
+}
