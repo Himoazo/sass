@@ -119,6 +119,16 @@ li:hover {
 
 /* Main content */
 
+/* footer */
+footer{
+    background-color: base.$menu-color;
+    min-height: 10vh;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
 /* Media querys */
 
 /* Större skärmas - gör menyn som inline */
