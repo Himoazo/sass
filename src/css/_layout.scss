@@ -4,10 +4,14 @@
     margin: 0;
 }
 
+body{
+    background-color: base.$generalCoolor;
+}
+
 /* Design av Header */
 header {
     height: 80px;
-    background-color: rgb(119, 24, 24);
+    background-color: base.$menu-color;
     margin: 0;
     position: relative;
     padding: 0 1em;
@@ -25,7 +29,7 @@ header {
 
 /* Design av meny för mobilenheter, placeras till höger om skärmen */
 nav {
-    background-color: rgb(119, 24, 24);
+    background-color: base.$menu-color;
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.71);
     font-size: 1.4em;
     position: absolute;
@@ -51,12 +55,10 @@ nav {
         padding: 0 1em;
     }
 }
-
-}
-
-nav li:hover {
-    background-color: rgb(94, 15, 15);
+li:hover {
+    background-color: darken($color: #b6a3a2, $amount: 30%);
     cursor: pointer;
+}
 }
 
 /* Meny knapp, öppna meny */
