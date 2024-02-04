@@ -118,12 +118,23 @@ li:hover {
 }
 
 /* Main content */
+#scssHeader{
+    text-align: center;
+    margin: 2vh;
+}
+.pics{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+p{
+    @extend .text;
+}
 /* footer */
 footer{
     background-color: base.$menu-color;
     min-height: 10vh;
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
