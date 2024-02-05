@@ -7,7 +7,9 @@
 body{
     background-color: base.$generalCoolor;
 }
-
+main{
+    min-height: 100vh;
+}
 /* Design av Header */
 header {
     height: 80px;
@@ -52,7 +54,7 @@ nav {
     a {
         color: white;
         text-decoration: none;
-        padding: 0 1em;
+        padding: 1em 1em;
     }
 }
 li:hover {
@@ -122,6 +124,10 @@ li:hover {
     text-align: center;
     margin: 2vh;
 }
+
+#startHeader{
+    @extend #scssHeader
+}
 .pics{
     display: flex;
     flex-direction: column;
@@ -138,10 +144,22 @@ footer{
     left: 0;
     bottom: 0;
     width: 100%;
+    p{
+        text-align: center;
+        font-weight: bold;
+        padding: 1em;
+    }
 }
 
 /* Media querys */
-
+@media (prefers-color-scheme: light) {
+    body{
+        background-color: lighten($color: #B29B89, $amount: 25%);
+    }
+    header, nav{
+        background-color: #805231;
+    }
+}
 /* Större skärmas - gör menyn som inline */
 @media only screen and (min-width: 992px) {
     header {
