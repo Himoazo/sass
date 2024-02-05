@@ -7,6 +7,14 @@
     cursor: pointer;
 }
 
+@mixin boxColor($hex){
+    @if $hex == light {
+      background-color: white;
+    } @else{
+      background-color: red;
+    }
+  }
+
 $menu-color: #b6a3a2;
 $generalCoolor: #ece5e0;
 

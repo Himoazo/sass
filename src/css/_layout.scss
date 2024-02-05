@@ -137,6 +137,15 @@ li:hover {
 p{
     @extend .text;
 }
+
+.TextBox{
+    text-align: center;
+    font-size: 5em;
+    margin: 5vh auto;
+    padding: 1rem;
+    @include base.boxColor(light);
+    width: fit-content;
+}
 /* footer */
 footer{
     background-color: base.$menu-color;
