@@ -131,7 +131,9 @@ li:hover {
 .pics{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; 
+    margin: 0 auto;
+    width: fit-content;
 }
 
 p{
@@ -203,5 +205,13 @@ footer{
     nav li {
         display: inline;
         padding: 1.2em 0;
+    }
+}
+
+@media only screen and (max-width: 992px){
+    .pics{
+        img{
+            width: 75%;
+        }
     }
 }
