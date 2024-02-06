@@ -172,7 +172,7 @@ footer{
     }
 }
 /* Större skärmas - gör menyn som inline */
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 801px) {
     header {
         padding: 0 3em;
     }
@@ -208,10 +208,19 @@ footer{
     }
 }
 
-@media only screen and (max-width: 992px){
+@media only screen and (max-width: 800px){
     .pics{
         img{
             width: 75%;
         }
+    }
+
+    .text{
+      
+        max-width: 90%;
+    }
+
+    .TextBox{
+        font-size: 3em;
     }
 }

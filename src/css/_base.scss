@@ -1,3 +1,4 @@
+/* Menyknapps design */
 @mixin menuButton {
     display: flex;
     align-items: center;
@@ -7,6 +8,7 @@
     cursor: pointer;
 }
 
+/* textBox (if/else sass) färgval */
 @mixin boxColor($hex){
     @if $hex == light {
       background-color: white;
@@ -14,10 +16,11 @@
       background-color: red;
     }
   }
-
+/* färgtema färgvariabler */
 $menu-color: #b6a3a2;
 $generalCoolor: #ece5e0;
 
+/* Extend */
 .text{
     font-size: larger;
     max-width: 75ch;
