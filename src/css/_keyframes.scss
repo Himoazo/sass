@@ -1,0 +1,44 @@
+/* kugghjul */
+@keyframes rotate {
+to {
+transform: rotate(360deg);
+}
+}
+
+@keyframes diagonal {
+0% {
+    transform: translate(-120px, 0px);
+}
+
+50% {
+    transform: translate(150px, 50px);
+        
+}
+100% {
+    transform: translate(-120px, 200px);
+    
+}
+
+}
+/* Bing Bong */
+@keyframes leftBlock {
+from {
+    transform: translate(0px, 0px);
+}
+
+to{
+    transform: translate(0px, 200px);
+}
+    
+}
+
+@keyframes rightBlock {
+from {
+transform: translate(0px, 0px);
+}
+
+to{
+transform: translate(0px, 30px);
+}
+
+}

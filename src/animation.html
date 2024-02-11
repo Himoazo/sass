@@ -6,7 +6,7 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/main.scss">
     <script type="module" src="js/main.js"></script>
-    <title>Startsida</title>
+    <title>Animering</title>
 </head>
 <body>
     <header>
@@ -40,21 +40,21 @@
         </nav>
     </header>
     <main>
-        <h1 id="startHeader"> CSS-preprocessorer </h1>
-        <p class="text" >
-            Denna webbplats handlar om CSS-preprocessorer och användning av SASS. <br>
-            Samtliga visuella effekter i denna webbplats är designade med hjälp av SASS och kompilerad med hjälp av Parcel.
-
-        </p>
-
-        <div>
-            <picture class="pics">
-               <source srcset="images/pic2.jpg?as=avif&width=400" type="image/avif">
-               <source srcset="images/pic2.jpg?as=webp&width=400" type="image/webp">
-               <source srcset="images/pic2.jpg?width=800" type="image/jpeg">
-               <img src="images/pic2.jpg?width=200" alt="SASS logga">
-           </picture>   
-           </div>
+        <div id="animationText">
+            <p> Kugghjulet nedan skulle egentligen rotera vid skrollning med hjälp av endast CSS animation-timeline: scroll();  
+                och utan Js. ”scroll()” är en experimental property som tydligen inte fungerar med Parcel och SASS. 
+                Här är en <a href="https://studenter.miun.se/~hoaz1600/test/" target="_blank">länk</a> till en annan sida som visar hur var tanken med kugghjulet. </p>
+        </div>
+        <div class="gearwheel">
+            <img src="images/icons8-gear-100.png" alt="gearwheel image">
+          </div>
+          <div class="bingBong">
+          <div id="left"></div>
+          <div class="ball">
+            <img src="images/tennis-ball-100.png" alt="tennis ball icon">
+          </div>
+          <div id="right"></div>
+          </div>
     </main>
     <footer>
         <p>Frontend-baserad webbutveckling</p>
