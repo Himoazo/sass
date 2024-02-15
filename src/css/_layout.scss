@@ -149,6 +149,14 @@ p{
     @include base.boxColor(light);
     width: fit-content;
 }
+
+/* Diagram */
+.chart{
+    position: relative;
+    margin: 2vh auto;
+    height: 95vh;
+    width: 95vw;  
+}
 /* footer */
 footer{
     background-color: base.$menu-color;

@@ -35,6 +35,21 @@ function courseChart(course){
         document.getElementById('kurs'),
         {
           type: 'bar',
+          options: {
+            indexAxis: 'y',
+              scales: {
+                y: {
+                  ticks: {
+                    font: {
+                      size: 10,
+                      weight: 'bold',
+                  },
+                    
+                  },
+                },
+               
+              },
+          },
           data: {
             labels: data.map(row => row.name),
             datasets: [
