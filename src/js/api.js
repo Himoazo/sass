@@ -36,12 +36,17 @@ function courseChart(course){
         {
           type: 'bar',
           options: {
+            responsive: true,
+            maintainAspectRatio: false,
             indexAxis: 'y',
               scales: {
                 y: {
                   ticks: {
+                    callback: function(value){
+                      return this.getLabelForValue(value).split(" ");
+                      },
                     font: {
-                      size: 10,
+                      size: 13,
                       weight: 'bold',
                   },
                     
