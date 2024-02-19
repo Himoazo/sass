@@ -161,7 +161,15 @@ p{
     align-items: center;
 }
 
-/* Map */
+/* Karta */
+fieldset{
+    width: fit-content;
+    margin: 2vh auto;
+    legend{
+        margin: 0 auto;
+        font-weight: bold;
+    }
+}
 #map { 
     margin: 0 auto;
     height: 70vh; 

@@ -35,7 +35,9 @@ async function fetchLocation(url) {
        
     } catch (error) {
         console.error('Fetch error:', error);
-        throw error;
+        let pEl = document.getElementById('error');
+        pEl.textContent = 'Fel: ' + error.message;
+        document.body.appendChild(pEl);
     }
 } 
 

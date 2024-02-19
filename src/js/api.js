@@ -55,6 +55,17 @@ function courseChart(course){
                 },
                
               },
+              plugins: {
+                legend: {
+                  labels: {
+                    // Set the font size to 20
+                    font: {
+                      size: 20,
+                      weight: 'bolder'
+                    }
+                  }
+                }
+              }
           },
           data: {
             labels: data.map(row => row.name),
