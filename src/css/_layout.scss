@@ -150,6 +150,32 @@ p{
     @include base.boxColor(light);
     width: fit-content;
 }
+
+/* Diagram */
+.chart{
+    position: relative;
+    margin:10vh auto;
+    height: 95vh;
+    width: 90vw;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Karta */
+fieldset{
+    width: fit-content;
+    margin: 2vh auto;
+    legend{
+        margin: 0 auto;
+        font-weight: bold;
+    }
+}
+#map { 
+    margin: 0 auto;
+    height: 70vh; 
+    width: 70%;
+}
 /* footer */
 footer{
     background-color: base.$menu-color;
