@@ -27,6 +27,7 @@ async function fetchData() {
 
 fetchData();
 
+//Function som skriver ut Bar chart av mest sökta kurserna
 function courseChart(course){
     course.sort((a, b) => b.applicantsTotal - a.applicantsTotal);
     let data = course.slice(0, 6);
@@ -68,6 +69,7 @@ function courseChart(course){
       );    
 }
 
+// Function som skriver ut Pie chart av de mest sökta program
 function programChart(program){
     program.sort((a, b) => b.applicantsTotal - a.applicantsTotal);
     let data = program.slice(0, 6);

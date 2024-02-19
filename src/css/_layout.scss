@@ -160,6 +160,13 @@ p{
     flex-direction: column;
     align-items: center;
 }
+
+/* Map */
+#map { 
+    margin: 0 auto;
+    height: 70vh; 
+    width: 70%;
+}
 /* footer */
 footer{
     background-color: base.$menu-color;
