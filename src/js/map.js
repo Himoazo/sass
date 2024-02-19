@@ -1,4 +1,5 @@
-"use strict"
+"use strict"  
+import L from "leaflet"; 
 
 //Skapar Leaflet karta
 const map = L.map('map').setView([59.3251172, 18.0710935], 13);
